@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galerie obrázků zobrazující krásy Finska.">
+    <meta name="keywords" content="Finsko, galerie, příroda, města">
+    <meta name="author" content="Martin Mikeš">
+    <title>Finsko - Galerie</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #e5e5e5;
+            color: #2a2a2a;
+        }
+
+        header,
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 24px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 16px auto;
+            max-width: 1200px;
+        }
+
+        nav,
+        .content,
+        aside {
+            padding: 24px;
+            background: #fff;
+            box-shadow: 0 2px 4px grey;
+        }
+
+        nav,
+        aside {
+            flex: 1;
+        }
+
+        .content {
+            flex: 2;
+            margin: 0 16px;
+        }
+
+        nav h2,
+        aside h2 {
+            margin-bottom: 16px;
+            text-align: center;
+            color: #003366;
+        }
+
+        nav ul,
+        aside ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li,
+        aside ul li {
+            margin: 10px 0;
+        }
+
+        nav ul li a,
+        aside ul li a {
+            text-decoration: none;
+            color: #003366;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover,
+        aside ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Finsko</h1>
+    </header>
+
+    <div class="container">
+        <nav>
+            <h2>Navigace</h2>
+            <ul>
+                <li><a href="../index.html">Úvod</a></li>
+                <li><a href="mesta.html">Nejznámější města</a></li>
+                <li><a href="jidla.html">Populární jídla</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2>Galerie</h2>
+            <div class="gallery">
+                <img src="../img/hory.jpg" alt="Polární záře">
+                <img src="../img/helsinki.jpg" alt="Helsinki">
+                <img src="../img/sauna.png" alt="Sauna">
+                <img src="../img/jezero.jpg" alt="Jezero">
+            </div>
+        </div>
+
+        <aside>
+            <h2>Zajímavé odkazy</h2>
+            <ul>
+                <li><a href="https://oilersfc.com/news/">Nejlepší finský florbalový tým</a></li>
+                <li><a href="https://recepty.cuketka.cz/lohikeitto/">Recept na lohikeitto</a></li>
+                <li><a href="https://finskolaponsko.cz/">Cestování po Laponsku</a></li>
+                <li><a href="https://www.saunasystem.cz/cs/news/174-15-tipu-jak-se-spravne-saunovat-ve-finske-saune/">Technika
+                        na saunování</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; Martin Mikeš 2024</p>
+    </footer>
+</body>
+
+</html>
